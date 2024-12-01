@@ -16,10 +16,10 @@ export default function SignIn() {
 
             {/* Google Sign-In Button */}
             <button
-                onClick={() => signIn("google")}
+                onClick={() => signIn("github")}
                 className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-lg hover:shadow-xl hover:bg-gray-100 transition-transform duration-200"
             >
-                <span className="font-medium text-gray-700">Sign in with Google</span>
+                <span className="font-medium text-gray-700">Sign in with Github</span>
             </button>
 
             {/* Footer Section */}

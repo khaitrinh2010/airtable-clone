@@ -19,7 +19,7 @@ export default function Home() {
             }}
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-200 hover:scale-105"
         >
-          Sign In with Google
+          Sign In with Github
         </button>
 
         {/* Decorative Section */}
