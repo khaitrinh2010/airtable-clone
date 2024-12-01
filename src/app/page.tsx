@@ -1,4 +1,6 @@
 "use client";
+
+import AirtableLogo from "~/app/_components/logo";
 export default function Home() {
   return (
       <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 to-blue-500 text-gray-800">

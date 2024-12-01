@@ -34,13 +34,16 @@ const handler = NextAuth({
         },
         async session({ session, token }) {
             if (token?.id) {
-                session.user.id = token.id;
+                session.user = {
+                    ...session.user,
+                    id: token.id.toString(), // Assign id to the session user object
+                };
             }
             return session;
         },
         async jwt({ token, user }) {
             if (user) {
-                token.id = user.id;
+                token.id = user.id; // Store the user's id in the JWT
             }
             return token;
         },
